@@ -1,0 +1,14 @@
+from math import *
+
+input = int(input("Enter a number greater than 3: "))
+
+print("2 is a prime number")
+print("3 is a prime number")
+
+for number in range(4, input):
+    for i in range(2, number-1):
+        if int(number/i) == number/i:
+            number = 0
+            break
+    if number != 0:
+        print(f'{number} is a prime number')'''
